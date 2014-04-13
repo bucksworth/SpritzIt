@@ -2,6 +2,8 @@ SpritzIt::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
+  root :to => 'spritz#spritz_it'
+
     get '/spritz/:action', :controller => 'spritz'
     post '/spritz/:action', :controller => 'spritz'
 
