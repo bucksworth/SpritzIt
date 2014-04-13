@@ -10,9 +10,9 @@
 
 <div class="panel panel-info">
 
+<%#= "I'm Here" if Spritz.group(:url).count.count > 1  %>
 
-<h3 class="panel-heading">Most Frequent Websites Spritz'd</h3>
-<div id="img1"><%= pie_chart Spritz.group(:url).count %> </div>
+<div id="img1"><%= pie_chart @urls %> </div>
 </div>
 
 <div class="panel panel-info">
