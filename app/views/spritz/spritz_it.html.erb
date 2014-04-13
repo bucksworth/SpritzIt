@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div>
+<h1>Spritz Queries</h1>
+<!--<img src="//Users/spencerneste/Desktop/spritz-logo.jpeg" width="304" height="228">-->
+</div>
+<%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+
+<h3>Most Frequent URL's</h3>
+<div id="img1"><%= pie_chart Spritz.group(:url).count %> </div>
+
+<h3>Length of Spritz</h3>
+<%= bar_chart @length %>
+
+<h3>Where in the World</h3>
+<%= geo_chart Spritz.group(:country).count %>
+
+</body>
+</html>
