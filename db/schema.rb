@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140412224247) do
+ActiveRecord::Schema.define(:version => 20140413065754) do
 
   create_table "spritzs", :force => true do |t|
     t.string   "url"
